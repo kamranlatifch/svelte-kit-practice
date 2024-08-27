@@ -2,7 +2,9 @@
 
 <script>
 	export let data;
+	// console.log('Data is', data);
 	const products = data.products;
+	// const comments = data.products;
 </script>
 
 <a href="/">Home Page</a>
@@ -17,3 +19,12 @@
 		<hr />
 	</div>
 {/each}
+<!-- Following is for our own api routes -->
+<!-- {#each products as product}
+	<div>
+		<h2>{product.id}</h2>
+		<p>{product.text}</p>
+
+		<hr />
+	</div>
+{/each} -->
