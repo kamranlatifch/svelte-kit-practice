@@ -6,3 +6,4 @@
 </script>
 
 <h1>Detail About Product {productId}</h1>
+<a href="/products">Back</a>
