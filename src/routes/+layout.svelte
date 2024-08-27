@@ -1,11 +1,16 @@
-<!-- Main Layout Component -->
-<main class="layout-container">
-	<header class="layout-header">Header</header>
+<!-- layout.svelte -->
+<script>
+	import Header from '../lib/header.svelte';
+	import Footer from '$lib/footer.svelte';
+</script>
+
+<div class="layout-container">
+	<Header />
 	<main class="layout-content">
 		<slot />
 	</main>
-	<footer class="layout-footer">Footer</footer>
-</main>
+	<Footer />
+</div>
 
 <style>
 	html,
@@ -20,24 +25,7 @@
 		flex-direction: column;
 	}
 
-	.layout-header {
-		background-color: #264653;
-		color: #f4a261;
-		font-size: 30px;
-		text-align: center;
-		padding: 10px;
-	}
-
 	.layout-content {
 		flex: 1;
-		text-align: center;
-	}
-
-	.layout-footer {
-		background-color: #264653;
-		color: #f4a261;
-		font-size: 30px;
-		text-align: center;
-		padding: 10px;
 	}
 </style>
