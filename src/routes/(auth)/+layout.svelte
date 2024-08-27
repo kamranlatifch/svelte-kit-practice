@@ -1,2 +1,2 @@
-<h1>Welcome to Us</h1>
+<h1>Welcome to Auth Layout</h1>
 <slot />
