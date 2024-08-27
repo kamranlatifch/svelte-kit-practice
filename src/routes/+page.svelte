@@ -18,5 +18,6 @@
 
 <a href="/blog">Blog</a>
 <a href="/products">Products</a>
+<a href="/db-products">DB Load Products</a>
 <!-- Navigating Programatically -->
 <button on:click={handleClick}>Place Order</button>
