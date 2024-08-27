@@ -1,6 +1,7 @@
 <!-- Follwoing Code is for Loading Page Data -->
 
 <script>
+	import Product from './product.svelte';
 	export let data;
 	// console.log('Data is', data);
 	const products = data.products;
@@ -13,10 +14,11 @@
 <h2>{data.title}</h2>
 {#each products as product}
 	<div>
-		<h2>{product.title}</h2>
+		<!-- <h2>{product.title}</h2>
 		<p>{product.description}</p>
 		<span>Price: {product.price}</span>
-		<hr />
+		<hr /> -->
+		<Product {product} />
 	</div>
 {/each}
 <!-- Following is for our own api routes -->
