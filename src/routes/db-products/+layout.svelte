@@ -2,11 +2,11 @@
 	export let data;
 	const title = data.title;
 	const featuredProducts = data.featuredProducts;
+	const parentData = data.parentData;
 </script>
 
 <slot />
-
-<h2>{title}</h2>
+<h2>{title} for {parentData.userName}</h2>
 
 {#each featuredProducts as product}
 	<div class="product-item">
