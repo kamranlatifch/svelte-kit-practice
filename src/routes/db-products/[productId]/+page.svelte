@@ -1,6 +1,7 @@
 <script>
 	export let data;
 	const product = data.product;
+	console.log('Data is', data);
 </script>
 
 <a href="/">Home Page</a>
