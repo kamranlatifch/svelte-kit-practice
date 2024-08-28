@@ -20,14 +20,15 @@
 	<a href="/products" data-sveltekit-preload-data="hover">Pre-load-data: Products</a>
 	<a href="/db-products" data-sveltekit-preload-code="hover">DB PreLoad-code Products</a>
 	<a href="/stocks" data-sveltekit-reload>Stocks Reload</a>
-	<a href="/db-products" data-sveltekit-noscroll="hover">DB No Scroll Products</a>
+	<a href="/db-products" data-sveltekit-noscroll="true">DB No Scroll Products</a>
 
 	<!-- Navigating Programatically -->
-	<button on:click={handleClick}>Place Order</button>
+	<button class="button" on:click={handleClick}>Place Order</button>
 
 	<!-- Preload Programatically -->
 
 	<button
+		class="button"
 		on:focus={async () => {
 			await preloadData('/db-products');
 		}}
@@ -46,5 +47,16 @@
 	} */
 	.main {
 		display: grid;
+		width: 50%;
+		background-color: aquamarine;
+		padding: 10px;
+		margin: 10px;
+		gap: 10px;
+		border-radius: 20px;
+		justify-content: center;
+	}
+	.button {
+		border-radius: 10px;
+		height: 50px;
 	}
 </style>
