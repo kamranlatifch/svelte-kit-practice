@@ -14,10 +14,19 @@
 	});
 </script>
 
-<h1>Welcome Home....</h1>
+<h1 class="tall">Welcome Home....</h1>
 
 <a href="/blog">Blog</a>
-<a href="/products">Products</a>
-<a href="/db-products">DB Load Products</a>
+<a href="/products" data-sveltekit-preload-data="hover">Pre-load-data: Products</a>
+<a href="/db-products" data-sveltekit-preload-code="hover">DB PreLoad-code Products</a>
+<a href="/stocks" data-sveltekit-reload>Stocks Reload</a>
+<a href="/db-products" data-sveltekit-noscroll="hover">DB No Scroll Products</a>
+
 <!-- Navigating Programatically -->
 <button on:click={handleClick}>Place Order</button>
+<!-- 
+<style>
+	.tall {
+		height: 100vh;
+	}
+</style> -->

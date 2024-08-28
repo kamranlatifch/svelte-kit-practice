@@ -7,3 +7,4 @@
 	{$page.error.message}
 </h1>
 <p>{$page.error.hint}</p>
+<!-- Following is Redirect -->
