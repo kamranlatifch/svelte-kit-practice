@@ -1,5 +1,5 @@
 export const load = () => {
 	return {
-		userName: 'Hashir'
+		userName: 'Hashir Khan'
 	};
 };

@@ -49,6 +49,20 @@
 	},
 	"top-losing-stock": {
 		"symbol": "Stock C",
-		"price": 100.0
-	}
+		"price": 1010.0
+	},
+	"stocks": [
+		{
+			"symbol": "Stock D",
+			"price": 10001.0
+		},
+		{
+			"symbol": "Stock E",
+			"price": 2000.0
+		},
+		{
+			"symbol": "Stock F",
+			"price": 300.0
+		}
+	]
 }
