@@ -12,8 +12,10 @@ export const load = async (serverLoadEvent) => {
 	const response = await fetch(`http://localhost:4000/products/${productId}`);
 
 	const product = await response.json();
+	const notification = 'End of season sale and 50% off';
 	return {
 		title,
-		product
+		product,
+		notification
 	};
 };
