@@ -25,12 +25,6 @@
 </div>
 
 <style>
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-	}
-
 	.layout-container {
 		min-height: 100vh;
 		display: flex;
