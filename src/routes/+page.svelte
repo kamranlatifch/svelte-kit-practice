@@ -27,6 +27,8 @@
 	<a href="/stocks" data-sveltekit-reload>Stocks Reload</a>
 	<a href="/db-products" data-sveltekit-noscroll="true">DB No Scroll Products</a>
 
+	<a href="/fromaction" data-sveltekit-noscroll="true">Form Action Login</a>
+
 	<!-- Navigating Programatically -->
 	<button class="button" on:click={handleClick}>Place Order</button>
 
@@ -44,6 +46,20 @@
 			goto('/db-products');
 		}}>Preload Prog DB Products</button
 	>
+
+	<button
+		class="button"
+		on:focus={async () => {
+			await preloadData('/news');
+		}}
+		on:mouseover={async () => {
+			await preloadData('/news');
+		}}
+		on:click={() => {
+			goto('/news');
+		}}
+		>News
+	</button>
 </div>
 
 <style>
