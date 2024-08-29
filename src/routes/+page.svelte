@@ -29,7 +29,7 @@
 
 	<a href="/fromaction" data-sveltekit-noscroll="true">Form Action Login</a>
 	<a href="/named-form-action" data-sveltekit-noscroll="true">Named Form Action Login</a>
-
+	<a href="/contact">Contact </a>
 	<!-- Navigating Programatically -->
 	<button class="button" on:click={handleClick}>Place Order</button>
 
